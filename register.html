@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: tan;">
+    <h1 class="login-head">Register</h1>
+    <section class="login-sect" id="reg-sect">
+        <form method="post" id="reg-form">
+            <input type="text" name="Name" placeholder="Your Name" class="text" required>
+            <input type="email" name="email" placeholder="Your Email" class="text" required>
+            <input type="password" name="password" placeholder="Enter Password" class="text" id="pass1" required>
+            <input type="password" name="password" placeholder="Re-enter Password" class="text" id="pass2" required>
+            <input type="submit" name="submit" value="REGISTER" id="button" class="text" onclick="checkPass()">
+        </form>
+    </section>
+    <script src=" regScript.js "></script>
+</body>
+
+</html>
