@@ -1,0 +1,21 @@
+label {
+    display: inline;
+    /* width: 200px; */
+    /* float: left; */
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+
+#send-button {
+    background-color: orange;
+    color: white;
+    position: relative;
+    left: 50%
+}

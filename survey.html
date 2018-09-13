@@ -6,6 +6,7 @@
     <title>Coffee Survey</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="custom.css"> -->
 </head>
 
 <body>
@@ -29,42 +30,47 @@
         <img src="./images/espresso.jpg" width="200" height="169">
     </aside>
 
-    <form action="form.php" method="GET">
+    <form method="POST" action="form.php">
 
         <fieldset>
 
             <legend>Personal Information</legend>
 
-            Your Name<br><input type="text" name="Name"><br>
+            <label for="firstname">Your Name</label>
+            <br><input type="text" name="Name" id="firstname" required><br>
 
-            <br> Email Address <br> <input type="email" name="email">
+            <br> <label for="email">Email Address</label> <br> <input type="email" name="email" id="email">
 
         </fieldset>
 
         <fieldset>
             <legend>Your Coffee Preferences</legend>
 
-            Tell us your coffee preparation methods.<br>
-            <textarea name="preparation"></textarea><br>
+            <label for="preparation">Tell us your coffee preparation methods.</label> <br>
+            <textarea name="preparation" id="preparation"></textarea><br>
 
-            <br> Do you grind your own beans?<br>
-            <input type="radio" name="grind" value="yes">yes<br>
-            <input type="radio" name="grind" value="no">no<br>
+            <br> Do you grind your own beans? <br>
+            <input type="radio" name="grind" value="yes" id="grindyes"><label for="grindyes">yes</label> <br>
+            <input type="radio" name="grind" value="no" id="grindno"><label for="grindno">no</label><br>
 
             <br> How do you drink your coffee?<br>
-            <input type="checkbox" name="checkbox" value="sugar">with sugar<br>
-            <input type="checkbox" name="checkbox" value="cream">with cream<br>
+            <input type="checkbox" name="checkbox" value="sugar" id="sugar"><label for="sugar">with sugar</label> <br>
+            <input type="checkbox" name="checkbox" value="cream" id="cream"><label for="cream">with cream</label> <br>
 
             <br> What is your favorite coffee drink?<br>
             <select name="drink">
-        <option value="select">please select a drink</option>
-    <option value="drip-coffee">drip coffee</option>
-    <option value="french-press">french press</option>
-    <option value="espresso">espresso</option>
-    <option value="latte">latte</option>
-    <option value="flavored">flavored</option>
-</select>
+                <option value="drip-coffee">drip coffee</option>
+                <option value="french-press">french press</option>
+                <option value="espresso">espresso</option>
+                <option value="latte">latte</option>
+                <option value="flavored">flavored</option>
+                <option value="select">please select a drink</option>
+            </select>
+
+            <br><input type="button" name="button" id="send-button" value="SEND">
         </fieldset>
+
+
 
     </form>
 
